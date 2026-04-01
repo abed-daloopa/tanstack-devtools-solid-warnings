@@ -1,5 +1,8 @@
 import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router'
 import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
+import { FormDevtoolsPanel } from '@tanstack/react-form-devtools'
+import { HotkeysDevtoolsPanel } from '@tanstack/react-hotkeys-devtools'
+import { PacerDevtoolsPanel } from '@tanstack/react-pacer-devtools'
 import { TanStackDevtools } from '@tanstack/react-devtools'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
@@ -49,8 +52,20 @@ function RootDocument({ children }: { children: React.ReactNode }) {
           }}
           plugins={[
             {
-              name: 'Tanstack Router',
+              name: 'TanStack Router',
               render: <TanStackRouterDevtoolsPanel />,
+            },
+            {
+              name: 'TanStack Form',
+              render: <FormDevtoolsPanel />,
+            },
+            {
+              name: 'TanStack Hotkeys',
+              render: <HotkeysDevtoolsPanel />,
+            },
+            {
+              name: 'TanStack Pacer',
+              render: <PacerDevtoolsPanel />,
             },
           ]}
         />
