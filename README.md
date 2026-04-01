@@ -6,7 +6,7 @@ Minimal reproduction for Solid.js warnings appearing in the browser console of a
 
 When using `@tanstack/devtools-vite` with multiple devtools packages (`@tanstack/react-devtools`, `@tanstack/react-form-devtools`, `@tanstack/react-pacer-devtools`, `@tanstack/react-hotkeys-devtools`), the following warnings appear in the **browser console**:
 
-```
+```sh
 [console.warn] You appear to have multiple instances of Solid. This can lead to unexpected behavior.
 [console.warn] computations created outside a `createRoot` or `render` will never be disposed
 [console.warn] cleanups created outside a `createRoot` or `render` will never be run
@@ -21,7 +21,7 @@ bun install
 bun --bun run dev
 ```
 
-Open http://localhost:3000 in a browser and check the browser console.
+Open <http://localhost:3000> in a browser and check the browser console.
 
 ## Expected Behavior
 
