@@ -21,6 +21,7 @@ const config = defineConfig({
 	server: {
 		open: true,
 	},
+	clearScreen: false,
 });
 
 export default config;
